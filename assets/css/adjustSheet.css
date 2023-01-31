@@ -3,6 +3,10 @@
   max-width: 1.5em;
 }
 
+.card-body {
+  max-height: 15em!important;
+}
+
 #logo {
   margin-left: 2em;
 }
@@ -27,7 +31,7 @@
 
 #contFoot {
   margin: 0;
-  padding-top: 0;
+  /*padding-top: 0!important;*/
 }
 
 .adPill {
@@ -41,6 +45,12 @@
     margin-top: 0em;
     max-width: 12em;
     max-height: 1.5em;
+  }
+}
+
+@media (min-width:35.5em) {
+  .card-body {
+    max-height: 50em;
   }
 }
 
@@ -152,5 +162,34 @@
 
 .active {
   background: var(--bs-nav-pills-link-active-color)!important;
+}
+
+#checkIt {
+  background: rgba(66,24,83,0.5)!important;
+}
+
+.modal-content {
+  background: #ffff00!important;
+  color: #662483!important;
+}
+
+.modal- .btn-primary {
+  background: #ffff00;
+}
+
+.btn-secondary {
+  background: #662483!important;
+  color: #ffff00!important;
+}
+
+.whaBtn {
+  background: #4fce5d!important;
+  color: #ffffff!important;
+  border-color: #ffffff!important;
+  border-width: 5px;
+}
+
+.contMod {
+  margin: auto;
 }
 
