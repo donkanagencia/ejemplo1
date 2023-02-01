@@ -7,6 +7,16 @@
   max-height: 15em!important;
 }
 
+.active.pll {
+  background: rgba(255, 255, 0, 1.0)!important;
+  color: #66008c!important;
+}
+
+.pll {
+  background: #66008c!important;
+  color: rgba(255, 255, 0, 1.0)!important;
+}
+
 #logo {
   margin-left: 2em;
 }
@@ -79,8 +89,18 @@
 }
 
 .toYellow:hover {
-  background-color: rgba(255, 255, 0, 1.0)!important;
-  color: rgba(66, 24, 83, 1.0);
+  -webkit-animation: toY 0.5s forwards;
+  animation: toY 0.5s forwards;
+}
+
+@keyframes toY {
+  from {
+    background-color: #66008c color: rgba(255, 255, 0, 1.0);
+  }
+  to {
+    background-color: rgba(255, 255, 0, 1.0);
+    color: #66008c;
+  }
 }
 
 .toViolet {
@@ -88,8 +108,21 @@
 }
 
 .toViolet:hover {
-  background-color: rgba(66, 24, 83, 1.0)!important;
-  color: rgba(255, 255, 0, 1.0)!important;
+  /*background-color: rgba(66, 24, 83, 1.0)!important;*/
+  /*color: rgba(255, 255, 0, 1.0)!important;*/
+  -webkit-animation: toV 0.5s forwards;
+  animation: toV 0.5s forwards;
+}
+
+@keyframes toV {
+  from {
+    background-color: rgba(255, 255, 0, 1.0);
+    color: rgba(66, 24, 83, 1.0);
+  }
+  to {
+    background-color: rgba(66, 24, 83, 1.0);
+    color: rgba(255, 255, 0, 1.0);
+  }
 }
 
 .navbar-toggler {
@@ -156,12 +189,8 @@
 }
 
 .nav-link {
-  background: #ffff00!important;
-  color: #662483!important;
-}
-
-.active {
-  background: var(--bs-nav-pills-link-active-color)!important;
+  background: #ffff00;
+  color: #662483;
 }
 
 #checkIt {
@@ -191,5 +220,43 @@
 
 .contMod {
   margin: auto;
+}
+
+.grayDiv {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  align-items: stretch;
+  background: rgba(146,146,146,0.7);
+  border-radius: 1em;
+  margin: inherit;
+  padding: inherit;
+}
+
+.hideOut {
+  display: none;
+}
+
+.csBanner {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 80%;
+  border-radius: 1em;
+}
+
+.ejemplo:hover {
+  cursor: pointer;
+  -webkit-animation: standUp 0.5s forwards;
+  animation: standUp 0.5s forwards;
+}
+
+@keyframes standUp {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: -1em;
+  }
 }
 

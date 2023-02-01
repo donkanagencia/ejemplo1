@@ -30,6 +30,79 @@ for (let btn of btnChkOut){
 
 function loQuiero(){
 
+
+let price;
+let product;
+let description;
+
+let id = this.id
+
+	if (id != null && id != ""){
+
+		
+
+
+	const arrId=id.split("_");;
+
+		switch (arrId[0])
+		{
+		case "sw":
+			product = "Un sitio web";
+			break;
+		case "sm":
+			product = "Un plan de social media";
+			break;
+		case "gmb":
+			product = "Un plan de Google My Business";
+			break;
+		default:
+			product = "Error en la seleccion de producto";
+		}
+
+
+
+	let plan;
+	let tipo;
+	
+	switch (arrId[1]){
+	case "i":
+		tipo = "inicial";
+		break;
+	case "e":
+		tipo = "emprendedor";
+		break;
+	case "d":
+		tipo = "despegado";
+		break;
+	default:
+		tipo = "error";
+	}
+	
+
+	if (arrId[2]=== "m"){
+		plan = "mensual";
+	}
+	else{
+		plan = "anual";
+	}
+
+	description = " " + tipo + " de pago " + plan;
+
+
+
+
+	let ptagId = "p_"+ id;
+	let ptag = document.getElementById(ptagId);
+
+	price = ptag.textContent.replace("/", " al ");
+
+
+
+
+	}
+	else{
+
+
 	let parent = this.parentNode;
 	let badge = parent.firstChild;
 	let heading = badge.nextElementSibling;
@@ -37,10 +110,11 @@ function loQuiero(){
 	let hprice =pdesc.nextElementSibling;
 
 
-	let price = hprice.innerHTML;
-	let product = heading.innerHTML;
-	let description = pdesc.innerHTML;
+price = hprice.innerHTML;
+product = heading.innerHTML;
+description = pdesc.innerHTML;
 
+}
 
 let chkIt = document.getElementById('mLabel');
 let descrIt = document.getElementById('descIt');
@@ -51,12 +125,16 @@ chkIt.innerHTML = product;
 descrIt.innerHTML = description; 
 priceT.innerHTML = price;
 
+
 currProd.name = product;
 currProd.desc = description;
 currProd.price = price;
 
 
+
+
 $('#checkIt').modal('toggle');
+
 
 
 }

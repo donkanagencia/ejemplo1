@@ -17,7 +17,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkalami&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/-Filterable-Gallery-with-Lightbox-BS4--Filterable-Gallery.css">
+    <link rel="stylesheet" href="assets/css/adjustSheet.css">
+    <link rel="stylesheet" href="assets/css/Animated-Filterable-Gallery.css">
+    <link rel="stylesheet" href="assets/css/BUTTON.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+    <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Centered-badges.css">
 <div class="modal fade" id="checkIt" tabindex="-1" role="dialog" aria-labelledby="checkIt" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -646,7 +653,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card grayOut">
                     <div class="card-body p-4 rounded toYellow btnTogg" id="gmb" style="background: #66008c;">
                         <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon" style="background: #ffff00;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-graph-up-arrow" style="color: #662483;">
                                 <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"></path>
@@ -662,8 +669,8 @@
         <h1 style="text-align: center;font-weight: bold;">PRICING SITIOS WEB</h1>
         <div>
             <ul class="nav nav-pills d-flex justify-content-center" role="tablist">
-                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="pill" href="#tab-1">Anual</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="pill" href="#tab-2">Mensual</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active pll" role="tab" data-bs-toggle="pill" id="swPll" href="#tab-1">Anual</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link pll" role="tab" data-bs-toggle="pill" href="#tab-2">Mensual</a></li>
             </ul>
             <div class="tab-content pt-5">
                 <div class="tab-pane active" role="tabpanel" id="tab-1">
@@ -671,7 +678,7 @@
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="background: #66008c;color: #662483;">inicial</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$150<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sw_i_a" style="background: #66008c;">$150<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: #66008c;">
                                     <div>
@@ -686,14 +693,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Porta suscipit netus ad ac.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="background: #ffff00;color: #662483;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="sw_i_a" style="background: #ffff00;color: #662483;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;">Emprendedor</span>
-                                    <h4 class="display-4 fw-bold card-title">$399<span class="fs-3 fw-normal text-muted">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sw_e_a">$399<span class="fs-3 fw-normal text-muted">/Año</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: rgb(102,0,140);">
                                     <div>
@@ -714,14 +721,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="color: #662483;background: #ffff00;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="sw_e_a" href="#" style="color: #662483;background: #ffff00;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="background: #66008c;color: #662483;">despegado</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$799<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sw_d_a" style="background: #66008c;">$799<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: #66008c;">
                                     <div>
@@ -742,7 +749,7 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="color: #662483;background: #ffff00;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="sw_d_a" style="color: #662483;background: #ffff00;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
@@ -753,7 +760,7 @@
                         <div class="col rounded">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">inicial</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$15<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sw_i_m" style="background: #66008c;">$15<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
                                     <div>
@@ -768,14 +775,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Porta suscipit netus ad ac.</span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="sw_i_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">emprendedor</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$38<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sw_e_a" style="background: #66008c;">$38<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
                                     <div>
@@ -796,14 +803,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="sw_e_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">despegado</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$70<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sw_d_a" style="background: #66008c;">$70<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
                                     <div>
@@ -824,7 +831,7 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="sw_d_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
@@ -837,8 +844,8 @@
         <h1 style="text-align: center;font-weight: bold;">PRICING SOCIAL MEDIA</h1>
         <div>
             <ul class="nav nav-pills d-flex justify-content-center" role="tablist">
-                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="pill" href="#tab-3">Anual</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="pill" href="#tab-4">Mensual</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link pll" role="tab" data-bs-toggle="pill" id="smPll" href="#tab-3">Anual</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active pll" role="tab" data-bs-toggle="pill" href="#tab-4">Mensual</a></li>
             </ul>
             <div class="tab-content pt-5">
                 <div class="tab-pane" role="tabpanel" id="tab-3">
@@ -846,7 +853,7 @@
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="background: #66008c;color: #662483;">inicial</span>
-                                    <h4 class="display-4 fw-bold card-title">&nbsp;<span class="fs-3 fw-normal text-muted"><span style="color: rgb(233, 236, 239);">USD&nbsp;</span></span>2099<span class="fs-3 fw-normal text-muted">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sm_i_a">&nbsp;<span class="fs-3 fw-normal text-muted"><span style="color: rgb(233, 236, 239);">USD&nbsp;</span></span>2099<span class="fs-3 fw-normal text-muted">/Año</span></h4>
                                     <h6>Ahorrá&nbsp;<span style="color: rgb(255, 255, 0);">USD 1129</span> contratando este plan</h6>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: #66008c;">
@@ -862,14 +869,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span><strong><span style="background-color: rgb(102, 0, 140);">1 reporte semanal GRATIS.</span></strong><br></span></li>
                                         </ul><span style="text-align: center;"></span>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="background: #ffff00;color: #662483;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="sm_i_a" style="background: #ffff00;color: #662483;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;">Emprendedor</span>
-                                    <h4 class="display-4 fw-bold card-title">&nbsp;<span class="fs-3 fw-normal text-muted"><span style="color: rgb(233, 236, 239);">USD&nbsp;</span></span>2699<span class="fs-3 fw-normal text-muted">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sm_e_a">&nbsp;<span class="fs-3 fw-normal text-muted"><span style="color: rgb(233, 236, 239);">USD&nbsp;</span></span>2699<span class="fs-3 fw-normal text-muted">/Año</span></h4>
                                     <h6>Ahorrá&nbsp;<span style="color: rgb(255, 255, 0);">USD 1249</span> contratando este plan</h6>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: rgb(102,0,140);">
@@ -891,14 +898,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="color: #662483;background: #ffff00;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="sm_e_a" style="color: #662483;background: #ffff00;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="background: #66008c;color: #662483;">despegado</span>
-                                    <h4 class="display-4 fw-bold card-title">&nbsp;<span class="fs-3 fw-normal text-muted"><span style="color: rgb(233, 236, 239);">USD&nbsp;</span></span>3999<span class="fs-3 fw-normal text-muted">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sm_d_a">&nbsp;<span class="fs-3 fw-normal text-muted"><span style="color: rgb(233, 236, 239);">USD&nbsp;</span></span>3999<span class="fs-3 fw-normal text-muted">/Año</span></h4>
                                     <h6>Ahorrá&nbsp;<span style="color: rgb(255, 255, 0);">USD 1989</span> contratando este plan</h6>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: #66008c;">
@@ -920,7 +927,7 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="color: #662483;background: #ffff00;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="sm_d_a" style="color: #662483;background: #ffff00;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
@@ -931,7 +938,7 @@
                         <div class="col rounded">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">inicial</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;"><span class="fs-3 fw-normal text-muted" style="background: #66008c;"><span style="color: rgb(233, 236, 239);">USD</span></span>269<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sm_i_m" style="background: #66008c;"><span class="fs-3 fw-normal text-muted" style="background: #66008c;"><span style="color: rgb(233, 236, 239);">USD</span></span>269<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                     <h6>Ahorrá&nbsp;<span style="color: rgb(255, 255, 0);">USD 100</span> contratando este plan</h6>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
@@ -947,14 +954,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>1 reporte semanal GRATIS.</span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="sm_i_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">emprendedor</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;"><span class="fs-3 fw-normal text-muted" style="background: #66008c;"><span style="color: rgb(233, 236, 239);">USD</span></span>329<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sm_e_m" style="background: #66008c;"><span class="fs-3 fw-normal text-muted" style="background: #66008c;"><span style="color: rgb(233, 236, 239);">USD</span></span>329<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                     <h6>Ahorrá&nbsp;<span style="color: rgb(255, 255, 0);">USD 129&nbsp;</span>contratando este plan</h6>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
@@ -972,14 +979,14 @@
                                                     </svg></span><span>1 reporte semanal GRATIS.</span></li>
                                             <li class="d-flex mb-2"></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="sm_e_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">despegado</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;"><span class="fs-3 fw-normal text-muted" style="background: #66008c;"><span style="color: rgb(233, 236, 239);">USD</span></span>499<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_sm_d_m" style="background: #66008c;"><span class="fs-3 fw-normal text-muted" style="background: #66008c;"><span style="color: rgb(233, 236, 239);">USD</span></span>499<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                     <h6>Ahorrá&nbsp;<span style="color: rgb(255, 255, 0);">USD 200&nbsp;</span>contratando este plan</h6>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
@@ -999,7 +1006,7 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span>1 reporte semanal&nbsp; GRATIS<span></span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="sm_d_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
@@ -1012,16 +1019,16 @@
         <h1 style="text-align: center;font-weight: bold;">PRICING GOOGLE MY BUSSINESS</h1>
         <div>
             <ul class="nav nav-pills d-flex justify-content-center" role="tablist">
-                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="pill" href="#tab-5">Anual</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="pill" href="#tab-6">Mensual</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link pll" role="tab" data-bs-toggle="pill" id="gmbPll" href="#tab-5">Anual</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active pll" role="tab" data-bs-toggle="pill" href="#tab-6">Mensual</a></li>
             </ul>
             <div class="tab-content pt-5">
-                <div class="tab-pane active" role="tabpanel" id="tab-5">
+                <div class="tab-pane" role="tabpanel" id="tab-5">
                     <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="background: #66008c;color: #662483;">inicial</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$150<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_gmb_i_a" style="background: #66008c;">$150<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: #66008c;">
                                     <div>
@@ -1036,14 +1043,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Porta suscipit netus ad ac.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="background: #ffff00;color: #662483;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="gmb_i_a" style="background: #ffff00;color: #662483;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;">Emprendedor</span>
-                                    <h4 class="display-4 fw-bold card-title">$399<span class="fs-3 fw-normal text-muted">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_gmb_e_a">$399<span class="fs-3 fw-normal text-muted">/Año</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: rgb(102,0,140);">
                                     <div>
@@ -1064,14 +1071,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="color: #662483;background: #ffff00;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="gmb_e_a" style="color: #662483;background: #ffff00;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="background: #66008c;color: #662483;">despegado</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$799<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_gmb_d_a" style="background: #66008c;">$799<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Año</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between" style="background: #66008c;">
                                     <div>
@@ -1092,18 +1099,18 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><a class="btn btn-primary d-block w-100" role="button" data-bss-hover-animate="shake" href="#" style="color: #662483;background: #ffff00;">LO QUIERO</a>
+                                    </div><a class="btn btn-primary d-block w-100 btnLoQ" role="button" data-bss-hover-animate="shake" id="gmb_d_a" style="color: #662483;background: #ffff00;">LO QUIERO</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-6">
+                <div class="tab-pane active" role="tabpanel" id="tab-6">
                     <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
                         <div class="col rounded">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">inicial</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$15<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_gmb_i_m" style="background: #66008c;">$15<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
                                     <div>
@@ -1118,14 +1125,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Porta suscipit netus ad ac.</span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="gmb_i_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">emprendedor</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$38<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_gmb_e_m" style="background: #66008c;">$38<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
                                     <div>
@@ -1146,14 +1153,14 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="gmb_e_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 grayOut">
                                 <div class="card-body flex-grow-0 p-4 rounded-top" style="background: #66008c;"><span class="badge bg-primary text-uppercase mb-2" style="color: #662483;background: #66008c;">despegado</span>
-                                    <h4 class="display-4 fw-bold card-title" style="background: #66008c;">$70<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
+                                    <h4 class="display-4 fw-bold card-title" id="p_gmb_d_m" style="background: #66008c;">$70<span class="fs-3 fw-normal text-muted" style="background: #66008c;">/Mes</span></h4>
                                 </div>
                                 <div class="card-footer d-flex flex-column flex-grow-1 justify-content-between p-4" style="background: #66008c;">
                                     <div>
@@ -1174,7 +1181,7 @@
                                                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                     </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
                                         </ul>
-                                    </div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="shake" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
+                                    </div><button class="btn btn-primary d-block w-100 btnLoQ" data-bss-hover-animate="shake" id="gmb_d_m" type="button" style="background: #ffff00;color: #662483;">LO QUIERO</button>
                                 </div>
                             </div>
                         </div>
@@ -1192,10 +1199,10 @@
             <div class="container">
                 <div class="filtr-controls text-center lead text-uppercase mb-4 divsTogg"><span class="active d-inline-block mx-3 position-relative" data-filter="all">all </span><span class="d-inline-block mx-3 position-relative" data-filter="1">Web&nbsp;</span><span class="d-inline-block mx-3 position-relative" data-filter="2">App</span><span class="d-inline-block mx-3 position-relative" data-filter="3">icon&nbsp;</span></div>
                 <div class="row filtr-container">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="1,2"><img src="assets/img/pantalla_ejemplosecond.png" onclick="windows.open(&quot;http://ejemplo1.donkanagencia.com&quot;)"></div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="2,3"><img src="assets/img/time%20zone.png"></div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="3,1"><img src="assets/img/viro%20media%20players%20ui.png"></div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="1,2,3"><img src="assets/img/blog%20magazine%20flat%20ui%20kit.png"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="1,2"><img id="1" class="ejemplo" src="assets/img/pantalla_ejemplosecond.png"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="2,3"><img id="2" class="ejemplo" src="assets/img/pantalla_ej_perezycia.png"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="3,1"><img id="3" class="ejemplo" src="assets/img/pantalla_ej_nwish.png"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="1,2,3"><img id="4" class="ejemplo" src="assets/img/pantalla_ej_lodepedro.png"></div>
                 </div>
             </div>
         </section>
@@ -1257,7 +1264,15 @@
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/-Filterable-Gallery-with-Lightbox-BS4-.js"></script>
+    <script src="assets/js/Animated-Filterable-Gallery.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
+    <script src="assets/js/checkOut.js"></script>
+    <script src="assets/js/dynamicStyles.js"></script>
+    <script src="assets/js/goToMod.js"></script>
+    <script src="assets/js/hiderMod.js"></script>
+    <script src="assets/js/routeExamples.js"></script>
 </body>
 
 </html>
